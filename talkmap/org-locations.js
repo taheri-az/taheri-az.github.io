@@ -1,22 +1,22 @@
 var addressPoints = [
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
-    51.5074456,
-    -0.1277653
+    "Robust Temporal Logic Planning under Contingency Constraints<br />IEEE International Conference on Automation Science and Engineering (CASE) 2025; Milan, Italy",
+    45.4641943,
+    9.1896346
   ],
   [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7879363,
-    -122.4075201
+    "Temporal Logic Motion Planning of a UAV-UGV Team in Semantically Unknown Environments<br />AIAA SCITECH 2026 Forum; Orlando, FL, USA",
+    28.5421218,
+    -81.379045
   ],
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
+    "State-Estimation-Aware Planning for Autonomous Systems with Temporal Logic Specifications<br />AIAA SCITECH 2023 Forum; National Harbor, MD, USA",
+    38.783342,
+    -77.0148285
   ],
   [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536909,
-    -118.242766
+    "Motion Planning Under Temporal Logic Specifications in Semantically Unknown Environments<br />American Control Conference (ACC) 2026; Denver, CO, USA",
+    39.7392364,
+    -104.984862
   ]
 ];
