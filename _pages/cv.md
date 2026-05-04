@@ -14,9 +14,9 @@ A PDF version of my CV is available [here](https://github.com/taheri-az/taheri-a
 Education
 ======
 
-* Ph.D. in Robotics and Autonomous Systems, Northeastern University, in progress
-* M.S. in Mechanical Engineering, Northeastern University
-* B.S. in Mechanical Engineering
+* Ph.D. in Robotics and Autonomous Systems, Northeastern University, ECE Department (in progress)
+* M.S. in Computer Engineering, Northeastern University
+* B.Sc., Sharif University of Technology
 
 Research Interests
 ======

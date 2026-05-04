@@ -7,7 +7,6 @@ excerpt: 'High-level exploration framework that integrates temporal logic with f
 date: 2026-02-01
 venue: 'arXiv preprint'
 paperurl: 'https://arxiv.org/abs/2602.18951'
-citation: 'A. Taheri, D. Aksaray. (2026). &quot;Temporal-Logic-Aware Frontier-Based Exploration.&quot; <i>arXiv:2602.18951</i>.'
 ---
 
 This paper introduces a high-level exploration framework that integrates temporal logic task specifications with frontier-based exploration strategies. The approach allows a robot to explore a previously unknown environment while simultaneously working toward satisfying a complex temporal logic specification, enabling principled task-driven exploration rather than pure coverage.

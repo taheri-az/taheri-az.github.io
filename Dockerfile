@@ -1,35 +1,26 @@
-# Base image: Ruby with necessary dependencies for Jekyll
 FROM ruby:3.2
 
-# Install dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
     nodejs \
     && rm -rf /var/lib/apt/lists/*
 
+# Gemfile stored at root — never overwritten by the volume mount at /usr/src/app
+RUN printf 'source "https://rubygems.org"\n\
+gem "jekyll", "4.3.3"\n\
+gem "jekyll-feed"\n\
+gem "jekyll-sitemap"\n\
+gem "jekyll-redirect-from"\n\
+gem "jekyll-gist"\n\
+gem "jekyll-paginate"\n\
+gem "webrick"\n\
+gem "kramdown-parser-gfm"\n' > /Gemfile.jekyll
 
-# Create a non-root user with UID 1000
-RUN groupadd -g 1000 vscode && \
-    useradd -m -u 1000 -g vscode vscode
+RUN BUNDLE_GEMFILE=/Gemfile.jekyll bundle install
 
-# Set the working directory
 WORKDIR /usr/src/app
+EXPOSE 4000
 
-# Set permissions for the working directory
-RUN chown -R vscode:vscode /usr/src/app
+ENV BUNDLE_GEMFILE=/Gemfile.jekyll
 
-# Switch to the non-root user
-USER vscode
-
-# Copy Gemfile into the container (necessary for `bundle install`)
-COPY Gemfile ./
-
-
-
-# Install bundler and dependencies
-RUN gem install connection_pool:2.5.0
-RUN gem install bundler:2.3.26
-RUN bundle install
-
-# Command to serve the Jekyll site
-CMD ["jekyll", "serve", "-H", "0.0.0.0", "-w", "--config", "_config.yml,_config_docker.yml"]
+CMD ["bundle", "exec", "jekyll", "serve", "-H", "0.0.0.0", "--watch", "--config", "_config.yml,_config_docker.yml"]

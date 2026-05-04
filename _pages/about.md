@@ -23,5 +23,6 @@ Research Interests
 Education
 ======
 
-- Ph.D. in Robotics and Autonomous Systems, Northeastern University (in progress)
+- Ph.D. in Robotics and Autonomous Systems, Northeastern University, ECE Department (in progress)
+- M.S. in Computer Engineering, Northeastern University
 - B.Sc., Sharif University of Technology
