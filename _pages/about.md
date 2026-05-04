@@ -19,3 +19,9 @@ Research Interests
 - Autonomous robot navigation in unknown environments
 - Decision-making under uncertainty
 - Multi-agent systems and coordination
+
+Education
+======
+
+- Ph.D. in Robotics and Autonomous Systems, Northeastern University (in progress)
+- B.Sc., Sharif University of Technology
