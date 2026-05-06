@@ -15,7 +15,7 @@ I am a PhD researcher at Northeastern University working on high-level planning 
 Research Interests
 ======
 
-- Temporal logic-based task planning (LTL, scLTL)
+- Temporal logic-based task planning
 - Autonomous robot navigation in unknown environments
 - Decision-making under uncertainty
 - Multi-agent systems and coordination
@@ -23,6 +23,6 @@ Research Interests
 Education
 ======
 
-- Ph.D. in Robotics and Autonomous Systems, Northeastern University, ECE Department (in progress)
-- M.S. in Computer Engineering, Northeastern University
-- B.Sc., Sharif University of Technology
+- **Ph.D. in Electrical & Computer Engineering**, Northeastern University, Boston, MA (present)
+- **M.S. in Computer Engineering**, Northeastern University, Boston, MA (2025)
+- **B.Sc. in Mechanical Engineering**, Sharif University of Technology, Tehran, Iran (2021)

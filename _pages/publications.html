@@ -5,28 +5,253 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% include base_path %}
+<style>
+.pub-list { list-style: none; padding: 0; margin: 0; }
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+.pub-item {
+  display: flex;
+  gap: 1.8em;
+  align-items: flex-start;
+  margin-bottom: 2.4em;
+  padding: 1.4em;
+  background: #fafafa;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+}
 
+.pub-gif {
+  flex-shrink: 0;
+  width: 280px;
+}
 
+.pub-gif img {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  display: block;
+}
 
+.pub-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.pub-title {
+  font-size: 1.05em;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.45;
+}
+
+.pub-venue {
+  font-size: 0.88em;
+  font-style: italic;
+  color: #555;
+  margin: 0;
+}
+
+.pub-venue .venue-name {
+  font-weight: 600;
+  color: #2a5fa8;
+  font-style: normal;
+}
+
+.pub-year {
+  display: inline-block;
+  background: #2a5fa8;
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: 700;
+  padding: 0.15em 0.55em;
+  border-radius: 3px;
+  margin-left: 0.4em;
+  vertical-align: middle;
+  font-style: normal;
+}
+
+.pub-links {
+  display: flex;
+  gap: 0.6em;
+  flex-wrap: wrap;
+  margin-top: 0.3em;
+}
+
+.pub-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  font-size: 0.82em;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.25em 0.75em;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.pub-links a.paper-link {
+  background: #2a5fa8;
+  color: #fff;
+  border: 1px solid #2a5fa8;
+}
+
+.pub-links a.paper-link:hover {
+  background: #1e4a87;
+  text-decoration: none;
+  color: #fff;
+}
+
+.pub-links a.cite-link {
+  background: #fff;
+  color: #444;
+  border: 1px solid #bbb;
+}
+
+.pub-links a.cite-link:hover {
+  background: #f0f0f0;
+  color: #000;
+  text-decoration: none;
+}
+
+.pub-bib {
+  font-family: monospace;
+  font-size: 0.78em;
+  background: #f0f4fa;
+  border: 1px solid #c5d3e8;
+  padding: 0.9em 1.1em;
+  border-radius: 5px;
+  white-space: pre;
+  overflow-x: auto;
+  display: none;
+  color: #222;
+}
+
+.pub-bib.open { display: block; }
+
+.pub-category-header {
+  font-size: 1.05em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #333;
+  margin: 2em 0 1em 0;
+  padding-bottom: 0.35em;
+  border-bottom: 2px solid #2a5fa8;
+}
+</style>
+
+<h2 class="pub-category-header">Conference Papers</h2>
+
+<ul class="pub-list">
+
+  <li class="pub-item">
+    <div class="pub-gif">
+      <img src="/Gifs/Temporal-Logic-Aware-Frontier-Based-Exploration.gif" alt="Temporal-Logic-Aware Frontier-Based Exploration demo">
+    </div>
+    <div class="pub-info">
+      <div class="pub-title">Temporal-Logic-Aware Frontier-Based Exploration</div>
+      <div class="pub-venue"><span class="venue-name">ACC 2026</span> <span class="pub-year">2026</span></div>
+      <div class="pub-links">
+        <a class="paper-link" href="https://arxiv.org/abs/2602.18951" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+        <a class="cite-link" href="#" onclick="toggleBib('bib-frontier'); return false;"><i class="fas fa-quote-right"></i> Cite</a>
+      </div>
+      <pre class="pub-bib" id="bib-frontier">@article{taheri2026temporal,
+  title={Temporal-Logic-Aware Frontier-Based Exploration},
+  author={Taheri, Azizollah and Aksaray, Derya},
+  journal={arXiv preprint arXiv:2602.18951},
+  year={2026}
+}</pre>
+    </div>
+  </li>
+
+  <li class="pub-item">
+    <div class="pub-gif">
+      <img src="/Gifs/MotionPlanningUnderTemporalLogicSpecificationsInSemanticallyUnknownEnvironments-ezgif.com-video-to-gif-converter.gif" alt="Motion Planning Under Temporal Logic demo">
+    </div>
+    <div class="pub-info">
+      <div class="pub-title">Motion Planning Under Temporal Logic Specifications in Semantically Unknown Environments</div>
+      <div class="pub-venue"><span class="venue-name">ACC 2026</span> <span class="pub-year">2026</span></div>
+      <div class="pub-links">
+        <a class="paper-link" href="https://arxiv.org/abs/2511.03652" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+        <a class="cite-link" href="#" onclick="toggleBib('bib-motion'); return false;"><i class="fas fa-quote-right"></i> Cite</a>
+      </div>
+      <pre class="pub-bib" id="bib-motion">@article{taheri2025motion,
+  title={Motion Planning Under Temporal Logic Specifications In Semantically Unknown Environments},
+  author={Taheri, Azizollah and Aksaray, Derya},
+  journal={arXiv preprint arXiv:2511.03652},
+  year={2025}
+}</pre>
+    </div>
+  </li>
+
+  <li class="pub-item">
+    <div class="pub-gif">
+      <img src="/Gifs/TemporalLogicMotionPlanningofaUAV-UGVTeaminSemanticallyUnknownEnvironments-ezgif.com-video-to-gif-converter.gif" alt="UAV-UGV Team Motion Planning demo">
+    </div>
+    <div class="pub-info">
+      <div class="pub-title">Temporal Logic Motion Planning of a UAV-UGV Team in Semantically Unknown Environments</div>
+      <div class="pub-venue"><span class="venue-name">AIAA SCITECH 2026 Forum</span> <span class="pub-year">2026</span></div>
+      <div class="pub-links">
+        <a class="paper-link" href="https://arc.aiaa.org/doi/abs/10.2514/6.2026-0566" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+        <a class="cite-link" href="#" onclick="toggleBib('bib-uav'); return false;"><i class="fas fa-quote-right"></i> Cite</a>
+      </div>
+      <pre class="pub-bib" id="bib-uav">@inproceedings{taheri2026temporal,
+  title={Temporal Logic Motion Planning of a UAV-UGV Team in Semantically Unknown Environments},
+  author={Taheri, Azizollah and Phalle, Yash Mohan and Aksaray, Derya},
+  booktitle={AIAA SCITECH 2026 Forum},
+  pages={0566},
+  year={2026}
+}</pre>
+    </div>
+  </li>
+
+  <li class="pub-item">
+    <div class="pub-gif">
+      <img src="/Gifs/YTDown_YouTube_Robust-Temporal-Logic-Planning-Under-Con_Media_1m2m6nuocjQ_001_1080p1-ezgif.com-video-to-gif-converter.gif" alt="Robust Temporal Logic Planning demo">
+    </div>
+    <div class="pub-info">
+      <div class="pub-title">Robust Temporal Logic Planning Under Contingency Constraints</div>
+      <div class="pub-venue"><span class="venue-name">IEEE CASE 2025</span> <span class="pub-year">2025</span></div>
+      <div class="pub-links">
+        <a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/11163815" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+        <a class="cite-link" href="#" onclick="toggleBib('bib-robust'); return false;"><i class="fas fa-quote-right"></i> Cite</a>
+      </div>
+      <pre class="pub-bib" id="bib-robust">@INPROCEEDINGS{11163815,
+  author={Y{\"u}ksel, Sad{\i}k Bera and Taheri, Azizollah and Yaz{\i}c{\i}o{\u{g}}lu, Yasin and Aksaray, Derya},
+  booktitle={2025 IEEE 21st International Conference on Automation Science and Engineering (CASE)},
+  title={Robust Temporal Logic Planning Under Contingency Constraints},
+  year={2025},
+  pages={30-36},
+  doi={10.1109/CASE58245.2025.11163815}
+}</pre>
+    </div>
+  </li>
+
+  <li class="pub-item">
+    <div class="pub-info">
+      <div class="pub-title">State-Estimation-Aware Planning for Autonomous Systems with Temporal Logic Specifications</div>
+      <div class="pub-venue"><span class="venue-name">AIAA SCITECH 2023 Forum</span> <span class="pub-year">2023</span></div>
+      <div class="pub-links">
+        <a class="paper-link" href="https://arc.aiaa.org/doi/abs/10.2514/6.2023-2665" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+        <a class="cite-link" href="#" onclick="toggleBib('bib-state'); return false;"><i class="fas fa-quote-right"></i> Cite</a>
+      </div>
+      <pre class="pub-bib" id="bib-state">@inproceedings{buyukkoccak2023state,
+  title={State-Estimation-Aware Planning for Autonomous Systems with Temporal Logic Specifications},
+  author={B{\"u}y{\"u}kko{\c{c}}ak, Ali Tevfik and Hu, Yingjie and Taheri, Azizollah and Aksaray, Derya and Gebre-Egziabher, Demoz},
+  booktitle={AIAA SCITECH 2023 Forum},
+  pages={2665},
+  year={2023}
+}</pre>
+    </div>
+  </li>
+
+</ul>
+
+<script>
+function toggleBib(id) {
+  document.getElementById(id).classList.toggle('open');
+}
+</script>
