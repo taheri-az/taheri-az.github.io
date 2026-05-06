@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Aziz Taheri"
+title                    : "Azizollah Taheri"
 title_separator          : "-"
-name                     : &name "Aziz Taheri"
+name                     : &name "Azizollah Taheri"
 description              : &description "PhD Researcher in Robotics and Formal Methods at Northeastern University"
 url                      : https://taheri-az.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -23,7 +23,7 @@ repository               : "taheri-az/taheri-az.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpeg"
-  name             : "Aziz Taheri"
+  name             : "Azizollah Taheri"
   pronouns         : # example: "she/her"
   bio              : "Ph.D. Student"
   location         : "Boston, MA"
