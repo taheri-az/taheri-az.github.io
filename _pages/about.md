@@ -23,6 +23,9 @@ Research Interests
 Education
 ======
 
-- **Ph.D. in Electrical & Computer Engineering**, Northeastern University, Boston, MA (present)
-- **M.S. in Computer Engineering**, Northeastern University, Boston, MA (2025)
-- **B.Sc. in Mechanical Engineering**, Sharif University of Technology, Tehran, Iran (2021)
+- **Ph.D. in Electrical & Computer Engineering**  
+  Northeastern University, Boston, MA (present)
+- **M.S. in Computer Engineering**  
+  Northeastern University, Boston, MA (2025)
+- **B.Sc. in Mechanical Engineering**  
+  Sharif University of Technology, Tehran, Iran (2021)
